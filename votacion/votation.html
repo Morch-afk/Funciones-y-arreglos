@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Sección de la Ciudad</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Encuesta de Sección de la Ciudad</h1>
+        <p>Seleccione su sección de la ciudad y emita su voto.</p>
+    </header>
+
+    <main>
+        <form id="votoForm">
+            <label for="seccion">Seleccione su sección:</label>
+            <select id="seccion" name="seccion" required>
+                <option value="">--Seleccione--</option>
+                <option value="norte">Norte</option>
+                <option value="sur">Sur</option>
+                <option value="centro">Centro</option>
+            </select>
+
+            <button type="button" onclick="emitirVoto()">Emitir Voto</button>
+        </form>
+
+        <div id="resultado" class="hidden">
+            <h2>Resultado de la Encuesta</h2>
+            <p id="mensajeResultado"></p>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
